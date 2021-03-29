@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LOGIN</title>
+    <meta charset="utf-8" />
+    <!-- icon on the tab -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/material/48/000000/login-rounded-right--v1.png"
+    />
+
+    <!-- <img src="https://img.icons8.com/android/24/000000/about.png"/> -->
+
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="./CSS/login_style.css" />
+
+    <!-- icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- body starts here -->
+
+  <body>
+    <div class="background">
+      <div class="login_page">
+        <a id="home" href="../index.html">
+          <img
+            src="https://img.icons8.com/fluent-systems-filled/144/000000/home.png"
+            id="logo"
+            alt="home"
+          />
+        </a>
+
+        <h1>LOGIN</h1>
+        <form action="../index.html">
+          <div class="form">
+            <div class="name">
+              <input
+                type="text"
+                id="namespan"
+                name="name"
+                required
+                autocomplete="on"
+              />
+              <label for="namespan" class="label_name"
+                ><span class="content_name">Username </span></label
+              >
+            </div>
+            <div class="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="on"
+              />
+              <label for="email" class="label_email">
+                <span class="content_email">Email</span>
+              </label>
+            </div>
+            <div class="password">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                required
+                minlength="4"
+                maxlength="16"
+                autocomplete="off"
+              />
+              <label for="password" class="label_password">
+                <span class="content_password">Password</span>
+              </label>
+            </div>
+            <div id="additional">
+              <a class="new_account" href="#"> New here... SIGN UP</a>
+
+              <a class="forgot" href="#"> Forgot Password</a>
+            </div>
+            <input type="submit" name="submit" id="submit" value="LOGIN" />
+          </div>
+        </form>
+      </div>
+      <div class="admin">
+        <a id="admin" target="_blank" href="../LOGIN_PAGES/adminlogin.html">
+          <img
+            src="https://img.icons8.com/ios-glyphs/30/000000/admin-settings-male.png"
+          />
+        </a>
+      </div>
+
+      <!-- THE END -->
+    </div>
+  </body>
+</html>

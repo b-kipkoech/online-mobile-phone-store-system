@@ -1,0 +1,363 @@
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* everything in the header STARTS here */
+
+#nav_bar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin-left: 2.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+#heading {
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-left: 2.5rem;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  transition: transform ease 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  /* margin-left: 0.8rem; */
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  /* margin-left: 1rem; */
+  color: black;
+  transition: all ease 0.5s;
+}
+nav ul li a:hover {
+  transform: translateX(5px);
+  color: red;
+  text-decoration: underline;
+}
+
+/* everything in the header ENDS here */
+
+.admin_page {
+  height: 100%;
+
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  width: 50vw;
+  margin-top: 5vh;
+  padding: 2.5rem 2.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(100, 149, 237, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  /* height: 100%; */
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(../Resources/Non-essential_Resources/air_jordan_1_booberrry.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 15vh;
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.header h1 {
+  letter-spacing: 1px;
+}
+.form {
+  text-align: center;
+  font-weight: bold;
+  /* background-color: red; */
+  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+::placeholder {
+  font-size: 1.2rem;
+  color: cornflowerblue;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* PRODUCT NAME */
+
+.prod_name {
+  font-size: 1.5rem;
+}
+.prod_name input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.prod_name input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* PRODUCT ID */
+
+.prod_id {
+  font-size: 1.5rem;
+}
+.prod_id input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.prod_id input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+/* PRODUCT NAME */
+
+.prod_color {
+  font-size: 1.5rem;
+}
+.prod_color input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.prod_color input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+/* PRODUCT TYPE */
+
+.prod_type {
+  font-size: 1.5rem;
+}
+.prod_type select {
+  width: 50%;
+  text-align-last: center;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.5rem;
+}
+
+.prod_type select:focus {
+  font-size: 1.5rem;
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: black;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* DATE OF MANFACTURE */
+
+.man_date {
+  font-size: 1.5rem;
+}
+.man_date input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.man_date input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* PRODUCT PRICE */
+
+.prod_price {
+  font-size: 1.5rem;
+}
+.prod_price input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.prod_price input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* PRODUCT TAX */
+
+.prod_tax {
+  font-size: 1.5rem;
+}
+.prod_tax input {
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: coral;
+  transition: all ease-in-out 0.3s;
+  font-size: 1.7rem;
+}
+.prod_tax input:focus {
+  /* font-size: 1.7rem; */
+  border-radius: 30px;
+  border-bottom: 3px solid coral;
+  color: cornflowerblue;
+  background-color: rgba(255, 127, 80, 0.5);
+}
+
+/* PRODUCT PHOTO */
+
+.prod_photo {
+  font-size: 1.5rem;
+  width: auto;
+  height: 16rem;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 5px 0px cornflowerblue;
+}
+.prod_photo input[type="file"] {
+  width: 100%;
+  height: 75%;
+  /* display: none; */
+  cursor: pointer;
+  background-color: transparent;
+  text-align: left;
+  opacity: 1;
+  background-image: url(../Resources/down-arrow.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  border-bottom: 3px solid black;
+}
+.prod_photo label {
+  padding-top: 1rem;
+  cursor: pointer;
+  color: black;
+  height: auto;
+  width: auto;
+  /* background-color: coral; */
+  background-position: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* SUBMIT */
+
+.submit {
+  font-size: 1.5rem;
+}
+.submit input {
+  cursor: pointer;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 4rem;
+  color: black;
+  background: none;
+  border: 1px solid cornflowerblue;
+  box-shadow: 0px 0px 10px 0px cornflowerblue;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.submit input:hover {
+  color: black;
+  background-color: cornflowerblue;
+}

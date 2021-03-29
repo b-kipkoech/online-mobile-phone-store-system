@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CHECKOUT</title>
+    <meta charset="utf-8" />
+    <!-- icon on the tab -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/ios-glyphs/60/000000/shopping-cart--v2.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="./CSS/cart_style.css" />
+
+    <!-- icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cart">
+      <div id="nav_bar">
+        <a id="home" href="../index.html">
+          <img
+            src="https://img.icons8.com/fluent-systems-filled/144/000000/home.png"
+            id="logo"
+            alt="logo"
+          />
+        </a>
+
+        <select name="ZIP CODE" id="zipcode">
+          <option value="" disabled selected>Enter Your City</option>
+
+          <!-- city acts as a placeholder for the actual zipcode for ease of use -->
+          <option value="00100">NAIROBI</option>
+          <option value="80100">MOMBASA</option>
+          <option value="40100">KISUMU</option>
+          <option value="20100">NAKURU</option>
+          <option value="30100">ELDORET</option>
+        </select>
+        <nav>
+          <ul>
+            <li><a href="./payment.html">CHECKOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <h1 id="heading">CHECKOUT</h1>
+      <div class="small_container cart_page">
+        <table>
+          <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart_info">
+                <img
+                  src="../Resources/Catalogue_resources/Air_max/PNGs/9_Air_Force_1_low_swoosh_blk.png"
+                  alt=""
+                />
+                <div>
+                  <p>Air Force 1 Low Swoosh BLK</p>
+                  <small> Price: Kshs. 1800.00 </small>
+                  <br />
+                  <a href="">REMOVE</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>Kshs. 2000.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart_info">
+                <img
+                  src="../Resources/Catalogue_resources/Vans/PNGs/10_Vans_revengexstorm_red.png"
+                  alt=""
+                />
+                <div>
+                  <p>Vans Revenge x Storm Red</p>
+                  <small> Price: Kshs. 1500.00 </small>
+                  <br />
+                  <a href="">REMOVE</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="2" /></td>
+            <td>Kshs. 1800.00</td>
+          </tr>
+        </table>
+        <div class="total">
+          <table>
+            <tr>
+              <td>SUBTOTAL</td>
+              <td>Kshs. 3300.00</td>
+            </tr>
+            <tr>
+              <td>TAX</td>
+              <td>Kshs. 500.00</td>
+            </tr>
+            <tr class="totally">
+              <td>TOTAL</td>
+              <td>Kshs. 3800.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Copyright &copy; 2020 <br />
+          SNEAK &bullet; PEAK inc. <br />
+          All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

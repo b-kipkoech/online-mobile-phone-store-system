@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADMIN</title>
+    <meta charset="utf-8" />
+    <!-- icon on the tab -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/material-rounded/24/000000/settings.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+    <!-- link to the stylesheet -->
+    <link rel="stylesheet" href="./admin.css" />
+
+    <!-- icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="admin_page">
+      <div class="form">
+        <form action="#">
+          <div id="nav_bar">
+            <img
+              src="https://img.icons8.com/material-rounded/48/000000/admin-settings-male.png"
+              id="logo"
+              alt="logo"
+            />
+            <h1 id="heading">WELCOME BACK</h1>
+
+            <nav>
+              <ul>
+                <li><a id="logout" href="./adminlogin.html">LOGOUT</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header">
+            <h1>SNEAK &bullet; PEAK</h1>
+            <p>FOR THE BEST SNEAKERS</p>
+          </div>
+          <!-- NAME -->
+
+          <div class="prod_name">
+            <label for="prod_name">PRODUCT NAME</label>
+            <br />
+
+            <input
+              type="text"
+              name="name"
+              id="prod_name"
+              required
+              autocomplete="off"
+              placeholder="AIR JORDAN 1"
+            />
+          </div>
+
+          <!-- ID -->
+
+          <div class="prod_id">
+            <label for="prod_id">PRODUCT ID</label>
+            <br />
+            <input
+              type="text"
+              id="prod_id"
+              pattern="(?=.*\d)(?=.*[A-Z]).4,}"
+              minlength="4"
+              placeholder="100ExamplE"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <!-- COLORWAY -->
+
+          <div class="prod_color">
+            <label for="prod_color">PRODUCT COLORWAY/ COLLAB NAME</label>
+            <br />
+            <input
+              type="text"
+              id="prod_color"
+              required
+              autocomplete="off"
+              placeholder="RETRO BLUE"
+            />
+          </div>
+
+          <!-- TYPE -->
+
+          <div class="prod_type">
+            <label for="prod_type">PRODUCT TYPE</label>
+            <br />
+            <select name="NEW ARRIVALS" id="prod_type" required>
+              <option value="" disabled selected>TYPE OF SNEAKER</option>
+              <option value="N_A_J">AIR JORDAN</option>
+              <option value="N_A_M">NIKE AIR MAX</option>
+              <option value="A_Y">ADIDAS YEEZY</option>
+              <option value="V_OTW">VANS</option>
+            </select>
+          </div>
+
+          <!-- DATE -->
+
+          <div class="man_date">
+            <label for="man_date">DATE OF MANUFACTURE</label>
+            <br />
+            <input type="date" id="man_date" autocomplete="on" />
+          </div>
+
+          <!-- PRICE -->
+
+          <div class="prod_price">
+            <label for="prod_price">PRODUCT PRICE</label>
+            <br />
+            <input
+              type="number"
+              id="prod_price"
+              required
+              autocomplete="off"
+              placeholder="IN Kshs"
+            />
+          </div>
+
+          <!-- TAX -->
+
+          <div class="prod_tax">
+            <label for="prod_tax">PRODUCT TAX</label>
+            <br />
+            <input
+              type="number"
+              id="prod_tax"
+              required
+              autocomplete="off"
+              placeholder="IN %"
+            />
+          </div>
+
+          <!-- IMG -->
+
+          <div class="prod_photo">
+            <label for="prod_photo"
+              >CHOOSE A PRODUCT PHOTO <br />
+              (Drag and Drop a Photo)</label
+            >
+            <!-- <br /> -->
+            <input type="file" id="prod_photo" required accept="image/*" />
+          </div>
+
+          <!-- ADD -->
+
+          <div class="submit">
+            <input type="submit" id="submit" value="ADD" />
+          </div>
+        </form>
+      </div>
+
+      <!-- END -->
+    </div>
+  </body>
+</html>
