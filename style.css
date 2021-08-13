@@ -10,11 +10,10 @@ html {
 
 .background {
   width: 100%;
-  /* height: 100%; */
-  max-height: 100%;
+  /*max-height: 100%;*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url(./Resources/sneakers_shoes_sports_149364_3840x2160.jpg);
-  background-position: center;
+    url(./Resources/);
+  /*background-position: center;*/
   background-size: cover;
   padding-left: 5%;
   padding-right: 5%;
@@ -87,6 +86,136 @@ nav:hover {
   padding-top: 3rem;
   font-family: "Montserrat", sans-serif;
 }
+.sliders .slider {
+  width: 100%;
+  height: 70vh;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 70vh;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 100%;
+  height: 70vh;
+}
+#img1 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img2 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img3 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img4 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+.navigation_manual {
+  position: absolute;
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+
+  justify-content: center;
+}
+.manual-btn {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.manual-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+.manual-btn {
+  transition: all ease-in-out 0.5s;
+}
+.manual-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(1.4);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+.navigation_auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 72.5vh;
+}
+.navigation_auto div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 01rem;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.2); */
+}
+.navigation_auto div:not(:last-child) {
+  margin-right: 1rem;
+}
+#radio1:checked ~ .navigation_auto .auto-btn1 {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#radio2:checked ~ .navigation_auto .auto-btn2 {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#radio3:checked ~ .navigation_auto .auto-btn3 {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#radio4:checked ~ .navigation_auto .auto-btn4 {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .cards {
   margin-top: 2vh;
   /* padding-top: 15rem; */
@@ -112,7 +241,7 @@ nav:hover {
   transition: transform 0.5s;
 }
 
-.jordan {
+.apple {
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -121,12 +250,12 @@ nav:hover {
   font-size: 1.8rem;
   box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
   color: rgba(0, 0, 0, 0);
-  background-image: url(./Resources/air_jordan_1_chicago.png);
+  background-image: url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.nike_air {
+.samsung {
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -135,12 +264,12 @@ nav:hover {
   font-size: 1.8rem;
   box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
   color: rgba(0, 0, 0, 0);
-  background-image: url(./Resources/nike-air-max-270-.png);
+  background-image: url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.yeezy {
+.appleaccessories {
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -149,12 +278,12 @@ nav:hover {
   font-size: 1.8rem;
   box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
   color: rgba(0, 0, 0, 0);
-  background-image: url(./Resources/Adidas_yeezus_limegreen_colorway.png);
+  background-image: url(./Resources/download.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.vans {
+.samsungaccessories {
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -163,25 +292,25 @@ nav:hover {
   font-size: 1.8rem;
   box-shadow: 1px 1px 10px 0px rgba(255, 255, 255, 0.2);
   color: rgba(0, 0, 0, 0);
-  background-image: url(./Resources/Vans_hightop.png);
+  background-image: url(./Resources/);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.jordan:hover {
+.apple:hover {
   transform: translateY(-10px);
   color: white;
   border: none;
   box-shadow: none;
   background-image: linear-gradient(
-      rgba(255, 0, 0, 0.2),
+      rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url(./Resources/air_jordan_1_chicago.png);
+    url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.nike_air:hover {
+.samsung:hover {
   transform: translateY(-10px);
   color: white;
   border: none;
@@ -190,12 +319,12 @@ nav:hover {
       rgba(181, 107, 129, 0.2),
       rgba(255, 255, 255, 0.2)
     ),
-    url(./Resources/nike-air-max-270-.png);
+    url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.yeezy:hover {
+.apple accessories:hover {
   transform: translateY(-10px);
   color: white;
   border: none;
@@ -204,12 +333,12 @@ nav:hover {
       rgba(0, 255, 0, 0.1),
       rgba(255, 255, 255, 0.2)
     ),
-    url(./Resources/Adidas_yeezus_limegreen_colorway.png);
+    url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.vans:hover {
+.samsung accessories:hover {
   transform: translateY(-10px);
   color: white;
   border: none;
@@ -218,7 +347,7 @@ nav:hover {
       rgba(0, 0, 0, 0.4),
       rgba(255, 255, 255, 0.2)
     ),
-    url(./Resources/Vans_hightop.png);
+    url(./Resources/);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;

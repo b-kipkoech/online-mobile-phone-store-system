@@ -8,19 +8,20 @@
     <!-- robots -->
 
     <meta
-      name="Sneak Peak"
-      content=" Take a sneak peak into the latest sneakers. No Pun Intended ;) "
+      name="PHONE . parlour"
+      content="  ;) "
     />
     <!-- device width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- title on the tab -->
 
-    <title id="title">SNEAK &bullet; PEAK</title>
+    <title id="title">PHONE &bullet; PARLOUR</title>
 
     <!-- icon on the tab -->
 
-    <link rel="icon" href="./Resources/air_jordan_1_hand_drawing(PNG).png" />
+    <link rel="icon" href="./Resources/sm_5afec562d661b.jpg" />
+    
 
     <!-- link to the stylesheet -->
 
@@ -47,80 +48,173 @@
   <body id="body">
     <div class="background">
       <!-- NAVIGATON BAR START-->
-
+     
       <div id="nav_bar">
+      <ul>
+       <li> <h2 id="main_title">PHONE PARLOUR </h2></li>
+      <li>
         <img
-          src="./Resources/airmax_90_hand_painted_(png).png"
+          src="./Resources/sm_5afec562d661b.jpg"
           id="logo"
           alt="logo"
         />
+        </li>
+        </ul>
         <nav>
           <ul>
-            <li><a href="./SNEAKER_PAGES/about.html">ABOUT</a></li>
-          </ul>
+           
+            
+            <li><a href="./Authentication module/adminlogin.html">LOGIN</a></li>
+            <li> <select name="ZIP CODE" id="zipcode">
+              <option value="" disabled selected>Enter Your City</option>
+            
+              <!-- city acts as a placeholder for the actual zipcode for ease of use -->
+              <option value="00100">NAIROBI</option>
+              <option value="80100">MOMBASA</option>
+              <option value="40100">KISUMU</option>
+              <option value="20100">NAKURU</option>
+              <option value="30100">ELDORET</option>
+            </select>      </li>
+           <li></li> <a href="../PHONE_PAGES/cart.html" target="_blank" class="cart">
+            <img src="https://img.icons8.com/material-rounded/24/000000/shopping-cart.png" alt="cart" />
+          </a>   </li>
+           <li><a href="./PHONE_PAGES/about.html">ABOUT</a></li>
+            </li>
+        
+          
+            </ul>
+            
+
+           
+  
         </nav>
       </div>
 
       <!-- NAVIGATON BAR END-->
+      <!---SLIDER-->
+      <!-- SLIDER START -->
+      
+      <div class="slider">
+        <div class="slides">
+          <!-- radio-btn start -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!-- radio-btn end -->
+          <!-- slide images start -->
+      
+          <div class="slide first">
+            <img id="img1" src="../Resources/catalogue resoures/apple/Earbuds-Comparison-Feature-1.jpg"
+              alt="" />
+          </div>
+          <div class="slide">
+            <img id="img2" src="../Resources/catalogue resoures/samsung/JibeJ3rvigYdjqoMfcSQNk-1200-80.jpg"
+              alt="" />
+          </div>
+          <div class="slide">
+            <img id="img3"
+              src="../Resources/catalogue resoures/samsungaccessories/Gear_Samsung-Galaxy-Buds+-out-of-case-SOURCE-Samsung.jpg"
+              alt="" />
+          </div>
+          <div class="slide">
+            <img id="img4"
+              src="../Resources/catalogue resoures/apple/iphone11.jpg" alt="" />
+          </div>
+          <!-- slide images end -->
+          <!-- automatic navigation start -->
+          <div class="navigation_auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation_manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+      </div>
+      <!-- image slider end -->
+      
+      <!-- script start -->
+      <script>
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
+      
+      <!-- script end -->
+      
+      <!-- SLIDER END -->
 
       <!-- CARDS START -->
 
       <div class="row">
         <div class="col">
-          <h1 id="main_title">SNEAK &bullet; PEAK</h1>
+          <h1 id="main_title">PRODUCTS WE MAJOURLY DEAL IN &RightArrow;</h1>
           <p id="description">
-            Sneak &bullet; Peak &TRADE; focuses on providing the best sneakers
-            you can find. <br />
-            Desire the feel of satisfaction with our confortable and stylish
-            selection of the Best shoes, for best style...
+           PHONE &bullet; PARLOUR &TRADE; focuses on providing the best phones in the market ranging from flagship phones to budget phones 
+            availabe in the phone market worldwide. <br />
+           .
             <br />
             <br />
-            &triangledown; DON'T WEAR IT... FLEX It. &triangle;
+            &triangledown;  you dream , you pay and we make your dreams come true . we are PHONE PARLOUR&triangle;
           </p>
         </div>
         <div class="col cards">
-          <div class="card jordan">
-            <h5 id="air_jordan">AIR JORDAN</h5>
+          <div class="card apple">
+            <h5 id="apple">APPLE</h5>
             <form
-              class="jordan_button"
+              class="apple_button"
               target="_blank"
-              action="./SNEAKER_PAGES/jordan.html"
+              action="./PHONE_PAGES/apple.html"
             >
-              <button id="jordan_button"><strong>SHOP</strong></button>
+              <button id="apple_button"><strong>SHOP</strong></button>
             </form>
           </div>
 
-          <div class="card nike_air">
-            <h5 id="nike_air">AIR MAX</h5>
+          <div class="card samsung">
+            <h5 id="samsung">SAMSUNG</h5>
             <form
-              class="air_button"
+              class="samsung_button"
               target="_blank"
-              action="./SNEAKER_PAGES/air_max.html"
+              action="./PHONE_PAGES/samsung.html"
             >
-              <button id="air_button"><strong>SHOP</strong></button>
+              <button id="samsung_button"><strong>SHOP</strong></button>
             </form>
           </div>
 
-          <div class="card yeezy">
-            <h5 id="yeezy">YEEZY</h5>
+          <div class="card apple accessories">
+            <h5 id="apple accessories">APPLE ACCESSORIES</h5>
             <form
-              class="yeezy_button"
+              class="apple accessories_button"
               target="_blank"
-              action="./SNEAKER_PAGES/yeezy.html"
+              action="./PHONE_PAGES/apple accessories.html"
             >
-              <button id="yeezy_button"><strong>SHOP</strong></button>
+              <button id="apple accessories_button"><strong>SHOP</strong></button>
             </form>
           </div>
 
-          <div class="card vans">
-            <h5 id="vans">VANS</h5>
+          <div class="card samsung accessories">
+            <h5 id="samsung accessories">SAMSUNG ACCESSORIES</h5>
 
             <form
-              class="vans_button"
+              class="samsung accessories_button"
               target="_blank"
-              action="./SNEAKER_PAGES/vans.html"
+              action="./PHONE_PAGES/samsung accessories.html"
             >
-              <button id="vans_button"><strong>SHOP</strong></button>
+              <button id="samsung accessories_button"><strong>SHOP</strong></button>
             </form>
           </div>
         </div>
@@ -128,17 +222,19 @@
 
       <!-- CARDS END -->
 
+    
+
       <!-- footer with copyright information -->
 
       <footer>
-        <a id="join" target="_blank" href="./SNEAKER_PAGES/login.html">LOGIN</a>
+        <a id="join" target="" href="./Authentication module/login.html">LOGIN</a>
         <br />
-        <a id="contact" href="./SNEAKER_PAGES/contact.html">CONTACT US </a>
+        <a id="contact" href="./PHONE_PAGES/contact.html">CONTACT US </a>
         <br />
 
         <p>
-          Copyright &copy; 2020 <br />
-          SNEAK &bullet; PEAK inc. <br />
+          Copyright &copy; 2021 <br />
+         PHONE &bullet; PARLOUR inc. <br />
           All rights reserved.
         </p>
       </footer>

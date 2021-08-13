@@ -1,0 +1,609 @@
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* everything in the header STARTS here */
+
+.background {
+  width: 100%;
+  height: 100vh;
+}
+#nav_bar {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin-left: 2.5rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}
+#logo:hover {
+  transform: translateY(-5px);
+}
+#heading {
+  color: black;
+  width: 100%;
+  text-align: left;
+  font-size: 3.5rem;
+  margin-left: 2.5rem;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  transition: transform ease 0.5s;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0.8rem;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+  color: black;
+}
+nav:hover {
+  transform: translateY(-5px);
+}
+
+#join {
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.5rem;*/
+  margin-right: 1rem;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+#join:hover {
+  transform: scale(1.1);
+  color: white;
+  /* border: 0.1rem solid rgba(0, 0, 0, 0.5); */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.cart {
+  /* padding-right: 2rem; */
+  padding-left: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+.cart:hover {
+  transform: translateY(-2px);
+}
+#select {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 3.5rem;
+
+  /* margin-left: 53rem; */
+}
+#zipcode {
+  /* align-items: center; */
+
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  background-color: white;
+  /* margin-left: 30rem; */
+  border: solid 1px black;
+  border-radius: 20px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#zipcode:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* everything in the header ENDS here */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background: black; */
+  background: white;
+
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+
+/* ANIMATION
+    S     
+      T     h
+        A     e
+          R     r
+            T     e
+              s
+   */
+
+.slider {
+  width: 100%;
+  height: 70vh;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 70vh;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 100%;
+  height: 70vh;
+}
+#img1 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img2 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img3 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+#img4 {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+.navigation_manual {
+  position: absolute;
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+
+  justify-content: center;
+}
+.manual-btn {
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.manual-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+.manual-btn {
+  transition: all ease-in-out 0.5s;
+}
+.manual-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(1.4);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+.navigation_auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 72.5vh;
+}
+.navigation_auto div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 01rem;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.2); */
+}
+.navigation_auto div:not(:last-child) {
+  margin-right: 1rem;
+}
+#radio1:checked ~ .navigation_auto .auto-btn1 {
+  /* background: rgba(255, 255, 255, 0.3); */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#radio2:checked ~ .navigation_auto .auto-btn2 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#radio3:checked ~ .navigation_auto .auto-btn3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#radio4:checked ~ .navigation_auto .auto-btn4 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ANIMATION ENDS HERE */
+
+/* CARDS START HERE */
+
+.row {
+  display: inline-block;
+
+  /* align-items: center; */
+}
+/* .col {
+  flex-basis: 40%;
+} */
+.cards {
+  margin-top: 8vh;
+  margin-left: 10%;
+  /* margin-right: 25%; */
+  overflow: hidden;
+
+  width: 100%;
+  align-items: center;
+  /* max-width: 50%; */
+}
+
+.card {
+  width: 30rem;
+  height: 35rem;
+  display: inline-block;
+  border: rgba(187, 209, 208, 0.2) solid 0.5px;
+
+  /* border-radius: 1.5rem; */
+  padding: 2rem 3rem;
+  margin: 2rem;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+
+  /* background-repeat: no-repeat; */
+  /* background-color: coral; */
+  transition: transform 0.5s;
+}
+/* .text {
+  color: red;
+  text-align: center;
+}
+h2 {
+  color: blue;
+} */
+
+.add_to_cart {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.8rem;
+  display: inline-block;
+
+  cursor: pointer;
+  border-radius: 2rem;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 90%;
+  opacity: 0.3;
+  transition: all ease-in-out 0.5s;
+}
+.add_to_cart:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+  /*font-size: 18px;
+   padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem; */
+}
+
+/* card one start */
+
+.one {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/mmmmxr.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.one:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card one end */
+/* card two start */
+
+.two {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/bbbxpp.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.two:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card two end */
+/* card three start */
+
+.three {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/gffgdgdg.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.three:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card three end */
+/* card four start */
+
+.four {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/trtyey.webp);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.four:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card four end */
+/* card five start */
+
+.five {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/190916160023741786.webp);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.five:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card five end */
+/* card six start */
+
+.six {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/assddffhgjg.webp);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.six:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card six end */
+/* card seven start */
+
+.seven {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/kkkk12kkk.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.seven:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card seven end */
+/* card eight start */
+
+.eight {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/www12miniww.jpg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.eight:hover {
+  color: black;
+
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card eight end */
+/* card nine start */
+
+.nine {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/hfyhf.webp);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+.nine:hover {
+  color: black;
+  background-size: 100%;
+  font-size: 1.2rem;
+}
+/* card nine end */
+/* card ten start */
+
+.ten {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-size: 1.8rem; */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  background-image: url(../../Resources/catalogue\ resoures/apple/unsplash/mnbvcgftr.jpg);
+  background-position: center;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease-in-out;
+}
+.ten:hover {
+  color: black;
+  background-image: url(../../Resources/c);
+  /* background-size: 90%; */
+  font-size: 1.2rem;
+}
+/* card ten end */
+
+/* footer Strart */
+
+footer {
+  margin-top: 10vh;
+  margin-bottom: 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-bottom: 2.3rem;
+  padding-top: 2.3rem;
+  position: sticky;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+
+  /* background: none; */
+  font-family: "Montserrat", sans-serif;
+}
